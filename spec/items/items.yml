@@ -1,0 +1,13 @@
+items:
+  - voucher:
+    code: VOUCHER
+    name: Cabify Voucher
+    price: 5.00
+  - tshirt:
+    code: TSHIRT
+    name: Cabify T-Shirt
+    price: 20.00
+  - mug:
+    code: MUG
+    name: Cabify Coffee Mug
+    price: 7.50
