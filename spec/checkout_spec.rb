@@ -27,7 +27,7 @@ describe Checkout do
 
   describe "#scan" do
       it "should add an existing item" do
-          expect(@checkout.scan("VOUCHER")).to be_an Array # Returns Array with all items in cart
+          expect(@checkout.scan("VOUCHER")).to be_an_instance_of LineItem
           expect(@checkout.items.find { |li| li.item.code == "VOUCHER" }).to be_truthy
       end
 

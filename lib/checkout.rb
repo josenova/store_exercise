@@ -15,10 +15,12 @@ class Checkout
       li = @items.find { |li| li.item.code == item.code } # Is this item already in cart?
       if li
         li.add
-        return li # print Line Item in console
+        return li # print Line Item in console (not really necessary)
       else
         promotion = @promotions.find { |p| p.item_code == code } # Only allows one promotion per item
-        @items << LineItem.new(item, 1, promotion) # Inject promotion object (or nil). This should be avoided using Rails Active Record associations.
+        new_line = LineItem.new(item, 1, promotion) # Inject promotion object (or nil). This can be avoided using Rails Active Record associations.
+        @items << new_line
+        return new_line # return Line Item in console
       end
     end
   end
