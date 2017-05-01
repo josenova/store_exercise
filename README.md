@@ -11,7 +11,7 @@ co.scan("VOUCHER")
 co.scan("VOUCHER")
 co.scan("VOUCHER")
 co.total
-> "€10.00"
+=> "€10.00"
 ```
 As you can see the 2x1 promo is applied. `@promotions` here is an array containing Promotion instances. This way you can load different promotions for different items into the checkout process. 
 
@@ -19,7 +19,9 @@ You can also `co.items` to view all items in cart as well as `descan` items (for
 ```
 co.descan("VOUCHER")
 co.total
-> "€5.00"
+=> "€5.00"
+co.items
+=> [#<LineItem:0x007fd18d8078f0 @item=#<Item:0x007fd18d0b8b80 @code="VOUCHER", @name="Cabify Voucher", @price=0.5e1>, @quantity=2, @promotion=#<Promotion:0x007fd18d0b8270 @item_code="VOUCHER", @min_quantity=2, @discount=1, @affected=0.5>>] 
 ```
 
 ## Pricing Rules
