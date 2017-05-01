@@ -13,7 +13,7 @@ co.scan("VOUCHER")
 co.total
 > "€10.00"
 ```
-As you can see the 2x1 promo is applied. `@promotions` here is an array containing Promotion instances. This way you can load different promotions for different items into the checkout process. You can also `descan` items (for lack of a better word) to remove an unwanted item. Continuing the checkout process like this:
+As you can see the 2x1 promo is applied. `@promotions` here is an array containing Promotion instances. This way you can load different promotions for different items into the checkout process. You can also `co.items` to view all items in cart as well as `descan` items (for lack of a better word) to remove an unwanted item. Continuing the checkout process like this:
 ```
 co.descan("VOUCHER")
 co.total
