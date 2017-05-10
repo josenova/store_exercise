@@ -1,6 +1,6 @@
-# Cabify's Coding Exercise
+# Store Coding Exercise
 
-This is a coding exercise for Cabify using Ruby v2.4.0 exclusively and Rspec to perform unit tests.
+This is a coding exercise using Ruby v2.4.0 exclusively and Rspec to perform unit tests.
 
 Use `irb -r ./store.rb` on console to run.
 
